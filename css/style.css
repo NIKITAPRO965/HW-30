@@ -1,0 +1,39 @@
+.container{
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: move-box;
+    animation-duration: 3000ms;
+    animation-delay: 1000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes move-box{
+    0%{
+        background-color: blue;
+        transform: translate(0px, 0px);
+    }
+    25%{
+        background-color: yellow;
+        transform: translate(0px, 250px);
+    }
+    50%{
+        background-color: pink;
+        transform: translate(250px, 250px);
+    }
+    75%{
+        background-color: orange;
+        transform: translate(250px, 0px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
